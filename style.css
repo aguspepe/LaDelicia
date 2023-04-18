@@ -19,17 +19,6 @@ img {
   object-fit: cover;
   border-radius: 20px 20px 0px 0px;
 }
-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15%;
-  height: 70px;
-  top: 0;
-  position: fixed;
-  width: 100%;
-  border-radius: 50px;
-}
 .scroll {
   background-color: aliceblue;
   box-shadow: 0.1rem 0.2rem 0.3rem #333;
@@ -95,4 +84,35 @@ header {
 }
 .informacion button:hover {
   background-color: #2d4263;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15%;
+  height: 70px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  border-radius: 50px;
+  background-color: rgb(37, 110, 170);
+}
+h1 {
+  border: 0px;
+  margin: 0px;
+}
+h2 {
+  text-align: center;
+  padding: 20px;
+}
+#logonav {
+  width: 50px;
+  height: 50px;
+  margin-left: 1px;
+  display: flex;
+  justify-content: left;
+}
+#contacto {
+  text-align: center;
 }
