@@ -9,34 +9,36 @@
 header {
   display: flex;
   justify-content: center;
-  gap: 0%;
-  height: 80px;
   top: 0px;
   position: fixed;
   width: 100%;
   border-radius: 0px;
   background-color: #004d7f;
+  flex-direction: column;
+  padding: 1rem;
+}
+header div {
+  display: flex;
+  margin: auto;
 }
 nav {
   display: flex;
   gap: 2%;
   justify-content: center;
   background-color: #004d7f;
-  height: 25px;
-  position: fixed;
   width: 100%;
 }
 body {
   font-family: "Space Grotesk", sans-serif;
   background-color: #141c29;
   background: linear-gradient(to bottom, #003e68, #003457, #141c29);
-  padding-top: 80px;
 }
 
-.logo {
+#logo {
   width: 45px;
-  height: auto;
-  border-radius: 10px;
+  height: fit-content;
+  object-fit: cover;
+  border-radius: none;
 }
 .contenedor {
   display: flex;
@@ -44,6 +46,8 @@ body {
   flex-wrap: wrap;
   gap: 50px;
   margin-bottom: 20px;
+  padding: 50px 0;
+  margin-top: 6rem;
 }
 .contenedor > div {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
