@@ -134,3 +134,59 @@ li a {
 #Reparto li {
   text-align: center;
 }
+#Reparto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+  padding: 50px 0;
+  margin-top: 6rem;
+  background-color: #2d4263;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#Servicios {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+  padding: 50px 0;
+  margin-top: 6rem;
+  background-color: #2d4263;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#Contacto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+  padding: 50px 0;
+  margin-top: 6rem;
+  background-color: #2d4263;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
+#Nosotros {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+  padding: 50px 0;
+  margin-top: 6rem;
+  background-color: #2d4263;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+}
