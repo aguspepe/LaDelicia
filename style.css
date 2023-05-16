@@ -130,3 +130,7 @@ li a {
   border-radius: 30%;
   padding: 7%;
 }
+
+#Reparto li {
+  text-align: center;
+}
