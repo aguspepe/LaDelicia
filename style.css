@@ -247,3 +247,15 @@ scrollbar-color: ::-webkit-scrollbar {
   border-radius: 4px;
   border: 1px solid #f1f1f1;
 }
+
+#textoOculto {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+#textoOculto:target {
+  max-height: 1000px; /* o cualquier altura suficientemente grande */
+  opacity: 1;
+}
