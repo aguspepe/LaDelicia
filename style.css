@@ -117,6 +117,11 @@ h2 {
   text-align: center;
   display: block;
 }
+h3 {
+  align-content: center;
+  text-align: center;
+  display: block;
+}
 img {
   width: 320px;
   height: 400px;
@@ -193,6 +198,20 @@ li a {
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
   background-color: #284e8b;
 }
+#Agua {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  margin-bottom: 20px;
+  padding: 50px 0;
+  margin-top: 6rem;
+  border-radius: 1rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
+  background-color: #284e8b;
+}
 .carousel {
   width: 300px;
   height: 300px;
@@ -234,8 +253,7 @@ li a {
   border: 3px solid #f1f1f1;
 }
 
-scrollbar-width: thin;
-scrollbar-color: ::-webkit-scrollbar {
+scrollbar-color ::-webkit-scrollbar {
   width: 12px;
 }
 
