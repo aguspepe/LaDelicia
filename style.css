@@ -13,36 +13,26 @@ header {
   display: flex;
   justify-content: center;
   top: 0px;
-  position: fixed;
-  width: 100%;
-  border-radius: 0px;
+  width: 45%;
+  border-radius: 10px;
   background-color: #284e8b;
   flex-direction: column;
   padding: 1rem;
   box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.75);
-}
-header div {
-  display: flex;
+  position: relative;
   margin: auto;
-}
-nav {
-  display: flex;
-  gap: 2%;
-  justify-content: center;
-  background-color: #284e8b;
-  width: 100%;
 }
 body {
   font-family: "Space Grotesk", sans-serif;
   background-color: #141c29;
-  background: linear-gradient(to bottom, #003e68, #003457, #141c29);
 }
 
 #logo {
-  width: 45px;
+  width: 65px;
   height: fit-content;
   object-fit: cover;
   border-radius: none;
+  margin: auto;
 }
 .contenedor {
   display: flex;
@@ -279,4 +269,136 @@ scrollbar-color ::-webkit-scrollbar {
 #textoOculto:target {
   max-height: 1000px; /* o cualquier altura suficientemente grande */
   opacity: 1;
+}
+/**/
+#botonwsp {
+  background-color: #fff;
+  border: 1px solid #25d366;
+  padding: 5px;
+  position: static;
+  width: 11.2em;
+  height: 2em;
+  transition: 0.5s;
+  font-size: 17px;
+  border-radius: 0.4em;
+}
+
+#botonwsp p {
+  position: static;
+  top: 0.4em;
+  left: 1.15em;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+  color: #25d366;
+}
+
+#botonwsp svg {
+  position: static;
+  top: 0.45em;
+  right: 0.5em;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  transition: 0.5s;
+  height: 1em;
+  fill: #fff;
+}
+
+#botonwsp:hover p {
+  left: 0.5em;
+  color: #fff;
+}
+
+#botonwsp:hover svg {
+  opacity: 1;
+}
+
+#botonwsp:hover {
+  background-color: #25d366;
+}
+#button2 {
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
+  border-radius: 20px;
+  background-size: 100% auto;
+  font-family: inherit;
+  font-size: 17px;
+  padding: 0.6em 1.5em;
+}
+
+#button2:hover {
+  background-position: right center;
+  background-size: 200% auto;
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse512 1.5s infinite;
+}
+
+@keyframes pulse512 {
+  0% {
+    box-shadow: 0 0 0 0 #05bada66;
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
+  }
+}
+
+ul {
+  text-align: center;
+  margin-top: 0%;
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cards .green {
+  background-color: #22c55e;
+}
+
+.cards .blue {
+  background-color: #3b82f6;
+}
+
+.cards .red {
+  background-color: #f43f5e;
+}
+
+.cards .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+  width: 250px;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.cards .card p.tip {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.cards .card p.second-text {
+  font-size: 0.7em;
+}
+
+.cards .card:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cards:hover > .card:not(:hover) {
+  filter: blur(10px);
+  transform: scale(0.9, 0.9);
 }
