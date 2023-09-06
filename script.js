@@ -11,3 +11,11 @@ document.addEventListener("DOMContentLoaded", function (event) {
     slides[currentSlide].className = "slide active";
   }
 });
+/*Script para que no puedan copiar el texto de la pagina*/
+document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("selectstart", function (e) {
+    e.preventDefault();
+  });
+});
+
+/*AgustinPepe*/
