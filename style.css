@@ -376,29 +376,31 @@ ul {
   border-style: solid;
 }
 /*boton del index*/
-#btn {
-  padding: 1%;
-  text-transform: uppercase;
-  border-radius: 8px;
-  font-size: 17px;
-  font-weight: 500;
-  color: #ffffff80;
-  text-shadow: none;
-  background: transparent;
-  box-shadow: transparent;
-  border: 1px solid #ffffff80;
-  transition: 0.5s ease;
-  user-select: none;
-  margin-top: 2%;
-  margin-bottom: 2%;
+/* Establece el estilo base del botón */
+
+.auto-hover-button {
+  padding: 5%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  background-color: #3498db;
+  color: black;
+  cursor: pointer;
+  font-size: larger;
+  border-radius: 10%;
+  border-style: none;
+
+  /* Agrega una animación de fondo */
+  animation: auto-hover 1s infinite alternate;
 }
 
-#btn:hover,
-:focus {
-  color: #ffffff;
-  background: #008cff;
-  border: 1px solid #008cff;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  box-shadow: 0 0 5px #008cff, 0 0 20px #008cff, 0 0 50px #008cff,
-    0 0 100px #008cff;
+/* Define la animación de fondo */
+@keyframes auto-hover {
+  0% {
+    /* Estilo inicial del botón */
+    background-color: #3498db;
+  }
+  100% {
+    /* Estilo al 100%, por ejemplo, en hover */
+    background-color: #141c29;
+  }
 }
